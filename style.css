@@ -20,10 +20,6 @@ body {
     padding-left: 10%;
 }
 
-#section-servicos {
-    min-height: 500px;
-}
-
 .custom-card {
     height: 100%;
     display: flex;
