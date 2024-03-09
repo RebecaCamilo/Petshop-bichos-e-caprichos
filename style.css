@@ -4,11 +4,6 @@
     font-family: "Inter", sans-serif;
 }
 
-/* Adicione estilos personalizados aqui */
-body {
-    background-color: #f0f0f0;
-}
-
 .nav-item a:hover {
     font-weight: 700;
 }  
@@ -52,18 +47,32 @@ div .card-body {
     object-fit: contain;
 }
 
+#pacote-card-1 span {
+    background-color: #b8e6f1;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+#pacote-card-2 span {
+    background-color: #b8e1f1;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
 
 /* Seção Pacotes */
 #section-pacotes .card {
     border: none;
 }
 
-/* Seção Fotos */
-#section-fotos {
-    background-color: #f0f0f0;
+#section-pacotes .card-body {
+    border: none;
+    background-color: #b8e1f1;
 }
 
-/* Seção Endereço */
-#section-endereco {
-    padding: 20px 0;
+.card-body ul {
+    text-align: left;
+}
+
+.card-body li {
+    list-style-image: url(assets/patinha-small2.png);
 }
