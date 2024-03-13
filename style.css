@@ -4,6 +4,10 @@
     font-family: "Inter", sans-serif;
 }
 
+#barra-navegacao img {
+    border-radius: 50%;
+}
+
 .nav-item a:hover {
     font-weight: 700;
 }  
@@ -13,6 +17,10 @@
     padding-top: 40px;
     padding-right: 20%;
     padding-left: 10%;
+}
+
+#section-hero a:hover {
+    transform: scale(1.05);
 }
 
 div .card{
@@ -67,6 +75,15 @@ div .card-body {
 #section-pacotes .card-body {
     border: none;
     background-color: #b8e1f1;
+}
+
+
+#section-pacotes .card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+}
+
+#section-pacotes .card a:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 5% */
 }
 
 .card-body ul {
