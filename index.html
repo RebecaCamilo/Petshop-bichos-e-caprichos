@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- EXTERNAL OWL CAROUSEL CSS CDN LINKS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+      <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
 
@@ -142,37 +149,39 @@
     </section>
 
     <!-- in loco images -->
-
-    <section id="section-fotos">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section id="section-fotos" class="p-4">
+        <div class="container">
+            <div id="owl-example" class="owl-carousel owl-theme">
+                <div class="item"><img src="assets/fotos-in-loco/img01.jpeg"></div>
+                <div class="item"><img src="assets/fotos-in-loco/img02.jpeg"></div>
+                <div class="item"><img src="assets/fotos-in-loco/img03.jpeg"></div>
+                <div class="item"><img src="assets/fotos-in-loco/img04.jpeg"></div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagem01.png" class="d-block w-100" style="height: 400px; width: auto;" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagem02.png" class="d-block w-100" style="height: 400px; width: auto;" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagem03.png" class="d-block w-100" style="height: 400px; width: auto;" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
 
+    <!-- mapa -->
+    <section id="section-map bg-light" class="p-4"></section>
+
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            $(".owl-carousel").owlCarousel({
+              loop: true,
+              margin: 10,
+              nav: true,
+              responsive: {
+                0: {
+                  items: 1,
+                },
+                600: {
+                  items: 3,
+                },
+                1000: {
+                  items: 3,
+                },
+              },
+            });
+          </script>
     </body>
     </html>
