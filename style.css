@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto";
+}
+
+#section-hero h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 300%;
 }
 
 #barra-navegacao img {
@@ -21,6 +28,12 @@
 
 #section-hero a:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 770px) {
+    #section-servicos #servicos-first-card-row {
+        margin-bottom: 22px;
+    }
 }
 
 div .card{
@@ -61,11 +74,22 @@ div .card-body {
     border-radius: 5px;
 }
 
-#pacote-card-2 span {
-    background-color: #b8e1f1;
-    padding: 0px 10px;
-    border-radius: 5px;
+#section-pacotes .btn {
+    color: #fff;
+    background-color: #df7d45; /* Cor laranja */
+    border-color: #df7d45; /* Cor da borda */
+  }
+
+/* Estilo para hover do botão */
+#section-pacotes .btn:hover {
+color: #fff;
+background-color: #e65a00; /* Cor laranja mais escura para hover */
+border-color: #e65a00; /* Cor da borda para hover */
 }
+
+#section-pacotes p {
+    color: #696969;
+    }
 
 /* Seção Pacotes */
 #section-pacotes .card {
@@ -74,7 +98,7 @@ div .card-body {
 
 #section-pacotes .card-body {
     border: none;
-    background-color: #b8e1f1;
+    background-color: #F2D8C9;
 }
 
 
@@ -129,10 +153,22 @@ div .card-body {
     max-height: 350px;
 }
 
+@media (max-width: 770px) {
+    #section-map-coments h4 {
+        margin-top: 30px;
+    }
+}
+
 #section-map-coments img {
     width: 100%;
     min-height: 250px;
     max-height: 350px;
+}
+
+@media (min-width: 1400px) {
+    #section-map-coments img {
+        width: 640px;
+    }
 }
 
 #section-footer {
@@ -145,7 +181,22 @@ div .card-body {
     height: 70%;
 }
 
+#section-footer h3 {
+    font-family: "DM Serif Display", serif;;
+}
+
 #section-footer .dev-by {
-    color: #5f5f5f;
     height: 30%;
+}
+
+#section-footer .dev-by h5 {
+    color: rgb(128, 128, 128);
+    font-size: 95%;
+}
+
+@media (max-width: 770px) {
+
+    #section-footer {
+        height: 300px;
+    }
 }
