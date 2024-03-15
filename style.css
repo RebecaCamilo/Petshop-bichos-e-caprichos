@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@300;400;500;700;900&display=swap');
 
+:root {
+    --blue-hero-backgroung: #66D0ED;
+    --blue-hero-gradient: #5cc0db;
+    --white: #ffffff;
+    --orange-promotional-card: #F2D8C9;
+    --orange: #df7d45;
+    --orange-dark: #e65a00;
+    --gray-promotional-card: #696969;
+    --blue-footer: #b8e6f1;
+    --gray-footer: #808080;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +23,7 @@
     font-size: 300%;
 }
 
-#barra-navegacao img {
+#navigation-bar img {
     border-radius: 50%;
 }
 
@@ -20,7 +32,7 @@
 }  
 
 #section-hero {
-    background: radial-gradient(circle, #66D0ED, #5cc0db);
+    background: radial-gradient(circle, var(--blue-hero-backgroung), var(--blue-hero-gradient));
     padding-top: 40px;
     padding-right: 20%;
     padding-left: 10%;
@@ -31,7 +43,7 @@
 }
 
 @media (max-width: 770px) {
-    #section-servicos #servicos-first-card-row {
+    #section-services #servicos-first-card-row {
         margin-bottom: 22px;
     }
 }
@@ -68,46 +80,39 @@ div .card-body {
     object-fit: contain;
 }
 
-#pacote-card-1 span {
-    background-color: #b8e6f1;
-    padding: 0px 10px;
-    border-radius: 5px;
-}
-
-#section-pacotes .btn {
-    color: #fff;
-    background-color: #df7d45; /* Cor laranja */
-    border-color: #df7d45; /* Cor da borda */
+#section-promotional-combo .btn {
+    color: var(--white);
+    background-color: var(--orange);
+    border-color: var(--orange);
   }
 
-/* Estilo para hover do botão */
-#section-pacotes .btn:hover {
-color: #fff;
-background-color: #e65a00; /* Cor laranja mais escura para hover */
-border-color: #e65a00; /* Cor da borda para hover */
+#section-promotional-combo .btn:hover {
+color: var(--white);
+background-color: var(--orange-dark);
+border-color: var(--orange-dark);
 }
 
-#section-pacotes p {
-    color: #696969;
-    }
+#section-promotional-combo p {
+    color: var(--gray-promotional-card);
+    font-size: 85%;
+}
 
-/* Seção Pacotes */
-#section-pacotes .card {
+#section-promotional-combo .card {
     border: none;
 }
 
-#section-pacotes .card-body {
+#section-promotional-combo .card-body {
     border: none;
-    background-color: #F2D8C9;
+    background-color: var(--orange-promotional-card);
 }
 
 
-#section-pacotes .card:hover {
-    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+#section-promotional-combo .card:hover {
+    transform: scale(1.05);
 }
 
-#section-pacotes .card a:hover {
-    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+#section-promotional-combo .card a:hover {
+    transform: scale(1.05);
 }
 
 .card-body ul {
@@ -118,12 +123,12 @@ border-color: #e65a00; /* Cor da borda para hover */
     list-style-image: url(assets/patinha-small.png);
 }
 
-#section-fotos {
+#section-photos {
     height: 400px;
-    background: radial-gradient(circle, #66D0ED, #5cc0db);
+    background: radial-gradient(circle, var(--blue-hero-backgroung), var(--blue-hero-gradient));
 }
 
-#section-fotos {
+#section-photos {
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -136,17 +141,16 @@ border-color: #e65a00; /* Cor da borda para hover */
     max-height: 300px;        
 }
 
-#section-map-coments {
+#section-map-comments {
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
 }
 
-#section-map-coments .row {
+#section-map-comments .row {
     align-items: center;
 }
 
-#section-map-coments iframe {
+#section-map-comments iframe {
     width: 100%;
     height: 400px;
     min-height: 250px;
@@ -154,19 +158,19 @@ border-color: #e65a00; /* Cor da borda para hover */
 }
 
 @media (max-width: 770px) {
-    #section-map-coments h4 {
+    #section-map-comments h4 {
         margin-top: 30px;
     }
 }
 
-#section-map-coments img {
+#section-map-comments img {
     width: 100%;
     min-height: 250px;
     max-height: 350px;
 }
 
 @media (min-width: 1400px) {
-    #section-map-coments img {
+    #section-map-comments img {
         width: 640px;
     }
 }
@@ -174,7 +178,7 @@ border-color: #e65a00; /* Cor da borda para hover */
 #section-footer {
     width: 100%;
     height: 200px;
-    background-color: #b8e6f1;
+    background-color: var(--blue-footer);
 }
 
 #section-footer .frases {
@@ -190,12 +194,11 @@ border-color: #e65a00; /* Cor da borda para hover */
 }
 
 #section-footer .dev-by h5 {
-    color: rgb(128, 128, 128);
+    color: var(--gray-footer);
     font-size: 95%;
 }
 
 @media (max-width: 770px) {
-
     #section-footer {
         height: 300px;
     }
