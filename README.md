@@ -22,4 +22,4 @@ O projeto também se destaca pela sua responsividade, sendo compatível com dife
 
 O Projeto está disponível através do GitHub Pages, clique <a href="https://rebecacamilo.github.io/Petshop-bichos-e-caprichos/">aqui</a> para conferir.
 
-https://github.com/RebecaCamilo/Petshop-bichos-e-caprichos/assets/71824475/b9ddf569-55b7-483b-8c6e-d44cb3d94f77
+https://github.com/RebecaCamilo/Petshop-bichos-e-caprichos/assets/71824475/80994f3f-2cc5-4520-a44c-dd7d3252ef75
