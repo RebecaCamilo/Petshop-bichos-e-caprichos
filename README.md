@@ -1,10 +1,11 @@
 # Landing Page Petshop Bichos e Caprichos
 
-Este é um projeto desenvolvido utilizando as tecnologias HTML e CSS. A página apresenta informações sobre o petshop, seus serviços, principais ofertas e formas de contato.
+Este é um projeto desenvolvido utilizando as tecnologias HTML, CSS e Boostrap. A página apresenta informações sobre o petshop, seus serviços, principais ofertas e formas de contato.
 
 ## Tecnologias utilizadas
 - HTML
 - CSS
+- Bootstrap
 
 ## Funcionalidades
 
